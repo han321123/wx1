@@ -1,0 +1,103 @@
+.main{
+  background:#fff;
+  min-height:100vh;
+}
+.goods-box{
+  padding:30rpx;
+  position:relative;
+}
+.goods-thumb{
+  width:100%;
+  height:400rpx;
+  border-radius:20rpx;
+}
+.carts-icon{
+  position:absolute;
+  right:30rpx;
+  top:30rpx;
+}
+.carts-icon image{
+  width:50rpx;
+  height:50rpx;
+}
+.carts-icon-num{
+  position:absolute;
+  top:-10rpx;
+  right:-10rpx;
+  background:red;
+  color:#fff;
+  font-size:20rpx;
+  width:30rpx;
+  height:30rpx;
+  border-radius:50%;
+  text-align:center;
+  line-height:30rpx;
+}
+.goods-title{
+  font-size:36rpx;
+  margin-top:20rpx;
+  font-weight:bold;
+}
+.goods-price{
+  color:red;
+  font-size:40rpx;
+  margin-top:10rpx;
+}
+.goods-stock{
+  font-size:24rpx;
+  color:#999;
+  margin-top:10rpx;
+}
+
+/* 数量加减 */
+.num-box{
+  display:flex;
+  align-items:center;
+  margin-top:30rpx;
+}
+.num-btn{
+  width:60rpx;
+  height:60rpx;
+  line-height:60rpx;
+  text-align:center;
+  border:1rpx solid #eee;
+  font-size:30rpx;
+}
+.num{
+  width:80rpx;
+  text-align:center;
+  height:60rpx;
+  line-height:60rpx;
+  border-top:1rpx solid #eee;
+  border-bottom:1rpx solid #eee;
+}
+
+.add-cart{
+  background:red;
+  color:#fff;
+  text-align:center;
+  padding:20rpx;
+  border-radius:10rpx;
+  margin-top:30rpx;
+}
+
+.goods-tab-box{
+  display:flex;
+  border-bottom:1rpx solid #eee;
+  margin-top:20rpx;
+}
+.tab{
+  flex:1;
+  text-align:center;
+  padding:20rpx 0;
+}
+.tab.on{
+  color:red;
+  font-weight:bold;
+  border-bottom:3rpx solid red;
+}
+.content{
+  padding:30rpx;
+  font-size:28rpx;
+  line-height:1.7;
+}

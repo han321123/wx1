@@ -1,0 +1,52 @@
+<view class="container">
+  <!-- 轮播图 -->
+  <swiper class="banner" indicator-dots circular autoplay interval="3000" duration="500">
+    <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+      <image src="{{item}}" class="banner-img" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 搜索栏（可点击跳转） -->
+  <view class="search-wrap" bindtap="goSearch">
+    <view class="search-box">
+      <icon type="search" size="16" color="#999"></icon>
+      <text class="search-placeholder">搜索商品</text>
+    </view>
+  </view>
+
+  <!-- 精选主题 → 改用 bindtap 点击 -->
+  <view class="section">
+    <view class="section-title">精选主题</view>
+    <view class="grid-box">
+      <!-- 第一张：水果/果味 -->
+      <view class="grid-item" bindtap="goFruit">
+        <image src="/image/001.jpg" mode="aspectFill"></image>
+      </view>
+
+      <!-- 第二张：点心 -->
+      <view class="grid-item" bindtap="goSnack">
+        <image src="/image/002.jpg" mode="aspectFill"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 最近新品 -->
+  <view class="section">
+    <view class="section-title">最近新品</view>
+    <view class="goods-wrap">
+
+      <view class="goods-item" bindtap="goDetail1">
+        <image src="/image/caomei.jpg" mode="aspectFill"></image>
+        <view class="name">草莓</view>
+        <view class="price">¥ 11.9</view>
+      </view>
+
+      <view class="goods-item" bindtap="goDetail2">
+        <image src="/image/cmdangao.jpg" mode="aspectFill"></image>
+        <view class="name">草莓蛋糕</view>
+        <view class="price">¥ 19.9</view>
+      </view>
+
+    </view>
+  </view>
+</view>
